@@ -2,11 +2,11 @@
 <link rel="stylesheet" href="../style/index.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-var pageContent = document.getElementByClass("sidenav").innerHTML; 
-sessionStorage.setItem("page1content", pageContent);
+var pageContent = document.getElementById("sidebar").innerHTML; 
+sessionStorage.setItem("sidebar", pageContent);
 </script>
 <body>
-  <div class="sidenav">
+  <div class="sidenav" id="sidebar">
     <a href="http://www.lonnonjamesd.com">Home</a>
     <a href="http://www.lonnonjamesd.com/pages/ActiveDevelopment.html">Active Development</a>
     <a href="http://www.lonnonjamesd.com/pages/clickergame.html">Clicker Game</a>
