@@ -1,7 +1,8 @@
 <html>
 <link rel="stylesheet" href="../style/index.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>document.getElementById("myDiv2").innerHTML=sessionStorage.getItem("page1content");</script>
+<script>document.getElementByClass("sidebar").innerHTML=sessionStorage.getItem("page1content");</script>
+  <div class="sidebar"></div>
   <div class="main">
     <button>Hello</button>
   </div>
