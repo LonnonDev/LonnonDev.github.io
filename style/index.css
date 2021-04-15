@@ -6,7 +6,7 @@ body {
   font-family: Tahoma, sans-serif; 
 }
 
-.sidebar {
+.sidenav {
   height: 100%;
   width: 160px;
   position: fixed;
@@ -18,18 +18,19 @@ body {
   padding-top: 20px;
 }
 
-.sidebar a {
+.sidenav a {
   padding: 6px 8px 6px 16px;
+  text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
 }
 
-.sidebar a:hover {
+.sidenav a:hover {
   color: #f1f1f1;
 }
 
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
