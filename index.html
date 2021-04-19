@@ -2,6 +2,16 @@
 <link rel="stylesheet" href="../style/index.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script scr="http://www.lonnonjamesd.com/scripts/index.js"></script>
+<script>
+console.log("test");
+window.onload = function(){
+    var refButton = document.getElementById("btnButton");
+
+    refButton.onclick = function() {
+    alert('I am clicked!');
+    }
+};
+</script>
 <body>
   <div class="sidenav" id="sidebar">
     <a href="http://www.lonnonjamesd.com">Home</a>
@@ -13,7 +23,7 @@
     <h1 id="tomoha"> Welcome to the Website <h1>
     <p id="tomoha"> this website is mainly used for sorting projects and playing with things in html</p>
     <p id="tomoha"> Github <a href="https://github.com/LonnonDev/LonnonDev.github.io">here</a></p>
-    <input id="btnButton" type="button">Cool</button>
+    <input id="btnButton" type="button" value="test"/>
     <p id="log">Test</p>
   </div>
 </body>
