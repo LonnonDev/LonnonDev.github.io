@@ -1,21 +1,7 @@
 <html>
 <link rel="stylesheet" href="../style/index.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
-var pageContent = document.getElementById("sidebar").innerHTML; 
-sessionStorage.setItem("sidebar", pageContent);
-if (window.console) console = { 
-    log: function(){
-        var output='',
-            console=document.getElementById('log');
-        for (var i=0;i<arguments.length;i++) {
-            output+=arguments[i]+' ';
-        }
-        console.innerText+=output+"\n";
-    }
-};
-console.log("test");
-</script>
+<script scr="../scripts/index.js"></script>
 <body>
   <div class="sidenav" id="sidebar">
     <a href="http://www.lonnonjamesd.com">Home</a>
