@@ -10,4 +10,10 @@ if (window.console) console = {
         console.innerText+=output+"\n";
     }
 };
-console.log("test");
+window.onload = function(){
+    var refButton = document.getElementById("btnButton");
+
+    refButton.onclick = function() {
+    alert('I am clicked!');
+    }
+};
