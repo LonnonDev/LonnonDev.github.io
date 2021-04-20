@@ -1,2 +1,2 @@
 $(".sidenav").load("/extras/sidenav.html")
-$(".githublink").load("/extras/githublink.html")
+$(".bottomright").load("/extras/githublink.html")
