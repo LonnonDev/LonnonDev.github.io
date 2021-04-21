@@ -2,21 +2,33 @@ var Ahegaos = 0
 var Censor = 0
 var Currency = " Wholesome Bucks"
 
+function randint(min, max) {
+	min = Math.ceil(min)
+	max = Math.floor(max)
+	return Math.floor(Math.random() * (max+1 - min) + min)
+}
+
+function ChangeImage(Text, Image) {
+	document.getElementById("censor").innerHTML = Text
+	document.getElementById("Image").src = "/images/" + Image
+	var AhegaoText = "You have " + parseInt(Ahegaos) + Currency
+	document.getElementById("AT").innerHTML = AhegaoText
+}
+
 function CensorImage() {
-	if (Censor == 0) {
+	var Chance = randint(1,100)
+	if (Censor == 0 & Chance != 1) {
 		Censor = 1
 		Currency = " Ahegaos"
-		document.getElementById("censor").innerHTML = "Unlewd"
-		document.getElementById("Image").src = "/images/aheago.jpg"
-		var AhegaoText = "You have " + parseInt(Ahegaos) + Currency
-		document.getElementById("AT").innerHTML = AhegaoText
-	} else {
+		ChangeImage("Unlewd", "aheago.jpg")
+	} else if (Censor == 1  & Chance != 1) {
 		Censor = 0
 		Currency = " Wholesome Bucks"
-		document.getElementById("censor").innerHTML = "Lewd"
-		document.getElementById("Image").src = "/images/censored.png"
-		var AhegaoText = "You have " + parseInt(Ahegaos) + Currency
-		document.getElementById("AT").innerHTML = AhegaoText
+		ChangeImage("Lewd", "censored.png")
+	} else if (Chance == 1) {
+		Censor = !Censor
+		Currency = " Wholesome Bucks"
+		ChangeImage("Unlewd", "fynn.png")
 	}
 }
 
