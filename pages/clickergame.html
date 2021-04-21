@@ -2,14 +2,18 @@
 	<head>
 		<link rel="stylesheet" href="/style/index.css">
 		<link rel="stylesheet" href="/style/blog.css">
+		<link rel="stylesheet" href="/style/clickergame.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="/js/jquery-3.6.0.js"></script>
 		<script defer type="text/javascript" src="/js/extras.js"></script>
+		<script defer type="text/javascript" src="/js/clickergame.js"></script>
 	</head>
 	<body>
 		<div class="sidenav"></div>
 		<div class="main">
-			<button>Hello</button>
+			<p class="AhegaoText" id="AT">You have 0 Wholesome Bucks</p>
+			<img src="/images/censored.png" onclick="Click();" id="Image"/>
+			<button class="bottom" onclick="CensorImage();" id="censor">Lewd</button>
 		</div>
 		<div class="bottomright"></div>
 	</body>
