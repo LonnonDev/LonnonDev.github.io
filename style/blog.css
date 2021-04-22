@@ -40,3 +40,11 @@
 	margin-left: -30px;
 	font-family: Amiko;
 }
+
+.rightside {
+	position: absolute;
+	font-family: Amiko;
+	top: 0px;
+	right: 0px;
+	padding: 0px 0px;
+}
